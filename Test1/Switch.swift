@@ -20,7 +20,7 @@ class Switch: UIControl {
     
     var padding: CGFloat = 1
     
-    var isOn = true
+    var isOn = false
     var animationDuration: Double = 0.5
     
     
@@ -70,7 +70,7 @@ class Switch: UIControl {
             iconView.frame = CGRect(origin: isOn ? offPoint : onPoint, size: iconSize)
             iconView.layer.cornerRadius = thumbSize.height * thumbCornerRadius
             iconView.image = UIImage(systemName: "checkmark")
-            self.bringSubviewToFront(iconView)
+            self.animate()
         }
     }
     

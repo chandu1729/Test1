@@ -36,9 +36,7 @@ class Cell: UITableViewCell {
             itemLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor),
             itemLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: padding),
             itemLabel.heightAnchor.constraint(equalToConstant: 44),
-            itemLabel.widthAnchor.constraint(equalToConstant: 75),
-            
-            mySwitch.centerYAnchor.constraint(equalTo: centerYAnchor)
+            itemLabel.widthAnchor.constraint(equalToConstant: 75)
         ])
     }
     
